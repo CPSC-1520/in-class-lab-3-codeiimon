@@ -17,3 +17,10 @@ function jsResAddBoldEventHandler(event) {
 }
 
 jsRes.addEventListener("mouseover", jsResAddBoldEventHandler)
+
+// Exercise 3
+function jsResRemoveBoldEventHandler(event) {
+    event.target.classList.remove("fw-bold")
+}
+
+jsRes.addEventListener("mouseout", jsResRemoveBoldEventHandler)
