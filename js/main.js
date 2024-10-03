@@ -24,3 +24,10 @@ function jsResRemoveBoldEventHandler(event) {
 }
 
 jsRes.addEventListener("mouseout", jsResRemoveBoldEventHandler)
+
+// Exercise 4
+function jsResClickEventHandler(event) {
+   event.target.classList.add("fst-italic")
+}
+
+jsRes.addEventListener("click", jsResClickEventHandler)
