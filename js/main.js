@@ -5,25 +5,25 @@ let jsRes = document.querySelector(".javascript-resources")
 let showResButton = document.querySelector("#show-resources")
 console.log(jsRes)
 
-function showResEventHandler() {
+function showResClickEventHandler() {
     jsRes.classList.remove("d-none");
 }
 
-showResButton.addEventListener("click", showResEventHandler)
+showResButton.addEventListener("click", showResClickEventHandler)
 
 // Exercise 2
-function jsResAddBoldEventHandler(event) {
+function jsResMouseOverEventHandler(event) {
     event.target.classList.add("fw-bold")
 }
 
-jsRes.addEventListener("mouseover", jsResAddBoldEventHandler)
+jsRes.addEventListener("mouseover", jsResMouseOverEventHandler)
 
 // Exercise 3
-function jsResRemoveBoldEventHandler(event) {
+function jsResMouseOutEventHandler(event) {
     event.target.classList.remove("fw-bold")
 }
 
-jsRes.addEventListener("mouseout", jsResRemoveBoldEventHandler)
+jsRes.addEventListener("mouseout", jsResMouseOutEventHandler)
 
 // Exercise 4
 function jsResClickEventHandler(event) {
