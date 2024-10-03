@@ -10,3 +10,10 @@ function showResEventHandler() {
 }
 
 showResButton.addEventListener("click", showResEventHandler)
+
+// Exercise 2
+function jsResAddBoldEventHandler(event) {
+    event.target.classList.add("fw-bold")
+}
+
+jsRes.addEventListener("mouseover", jsResAddBoldEventHandler)
